@@ -197,7 +197,7 @@ public class DiscordGame {
 
         channel.createThreadChannel(threadName, true)
                 .setInvitable(false)
-                .setAutoArchiveDuration(ThreadChannel.AutoArchiveDuration.TIME_3_DAYS)
+                .setAutoArchiveDuration(ThreadChannel.AutoArchiveDuration.TIME_1_WEEK)
                 .queue(
                         threadChannel -> addUsersToThread(threadChannel, userIds)
                 );
